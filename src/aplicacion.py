@@ -32,7 +32,7 @@ st.markdown(
 # Cargar modelo con cache
 @st.cache_resource
 def load_deep_learning_model():
-    model = tf.keras.models.load_model("modelo_entrenado_completo.h5")
+    model = tf.keras.models.load_model("../models/modeloCNN2.h5")
     return model
 
 model = load_deep_learning_model()
